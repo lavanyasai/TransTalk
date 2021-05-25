@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.project.android.transtalk.fragments.RequestsFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sent_requests_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/no_sent_requests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/roboto_medium"
+        android:text="No Sent Requests"
+        android:textColor="@color/black"
+        android:visibility="gone"/>
+
+</RelativeLayout>

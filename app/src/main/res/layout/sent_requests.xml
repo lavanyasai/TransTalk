@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/sent_request_friend_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/contact_image" />
+
+    <TextView
+        android:id="@+id/sent_request_friend_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/sent_request_friend_image"
+        android:layout_toLeftOf="@id/sent_friend_withdraw"
+        android:layout_toRightOf="@+id/sent_request_friend_image"
+        android:fontFamily="@font/roboto"
+        android:text="Display Name"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sent_friend_withdraw"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="14sp"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/colorAccent"
+        android:background="@color/white"
+        android:text="Withdraw"
+        android:layout_alignParentRight="true" />
+
+</android.widget.RelativeLayout>

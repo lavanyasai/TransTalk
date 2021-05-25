@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/friend_user_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/contact_image"
+        android:layout_marginEnd="16dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/friend_user_online"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_alignBottom="@+id/friend_user_image"
+        android:layout_alignEnd="@+id/friend_user_image"
+        android:background="@drawable/green_button"
+        android:layout_alignRight="@+id/friend_user_image" />
+
+    <TextView
+        android:id="@+id/friend_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/friend_user_image"
+        android:layout_toRightOf="@+id/friend_user_image"
+        android:fontFamily="@font/roboto"
+        android:text="Display Name"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/friend_user_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/friend_user_name"
+        android:layout_toEndOf="@id/friend_user_image"
+        android:layout_toRightOf="@id/friend_user_image"
+        android:fontFamily="@font/roboto"
+        android:text="Message"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+</android.widget.RelativeLayout>
